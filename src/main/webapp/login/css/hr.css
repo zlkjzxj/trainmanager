@@ -1,0 +1,134 @@
+﻿@charset "utf-8";
+/* CSS Document */
+body{
+}
+.container{
+	position:fixed;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	max-width:2000px;
+	z-index:-10;
+	background-image:url(../pictures/skyA.jpg);
+	background-position:center bottom;
+	background-repeat:no-repeat;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-o-background-size:cover;
+	zoom:1;
+	opacity:0;
+	background-color:#e2ebf8;
+	opacity: 1;
+	}
+.footer{
+	position:fixed; 
+	bottom:0;
+	width:100%;
+	padding:10px 0 20px 0;
+	font-size:12px;
+	color:#FFF;
+	text-align:center;
+	margin:0 auto;}
+.loginimg
+{
+	width:1100px;
+	height:100px;
+	margin:100px auto;
+	background-image:url(../pictures/login.png); background-repeat:no-repeat; 
+	text-align:left;
+}
+.version{
+	margin:0 0 0 750px;
+	padding:45px 0 0 0;
+	}
+.version span{
+	padding:5px 5px 5px 5px;
+	background-color:#a1ccf5;
+	border:1px solid #529be0;
+	border-radius:3px;
+	font-weight:bold;
+	font-size:14px;
+	font-family:黑体;
+	color:#FFF;
+	text-shadow:1px 1px 1px #999;}
+.guanggao{
+	width:1100px;
+	height:469px;
+	margin:-20px auto;
+	padding:100px 0 0 0;
+	background-image:url(../pictures/guanggao.png); background-repeat:no-repeat; 
+	text-align:left;
+	}
+.loginA{
+	width:780px;
+	float:left;}
+.loginB{
+	width:320px;
+	float:left;}
+.kouhao{
+	width:320px;
+	height:27px;
+	margin-top:-60px;
+	background-image:url(../pictures/kouhao.png); background-repeat:no-repeat; 
+	}
+.c1{
+	font-size:12px;
+	color:#ffffff;
+	font-family:微软雅黑;
+	text-shadow:1px 1px 1px #333;}
+.yzmimg{
+	width:100px;
+	height:39px;
+	padding-left:10px;
+	float:left;}
+.shaxin{
+	width:39px;
+	height:39px;
+	
+	}
+.hrfrom{
+	width:320px;
+	margin:0 0 0 -35px;	
+	}
+.hrfrom ul{
+	text-align:left;
+	}
+.hrfrom ul li{
+	list-style:none;
+	width:320px;
+	padding:25px 0 0 0;
+	}
+.hrinputA{
+	width:318px;
+	height:39px;
+	line-height:39px;
+	border:1px solid #5497d9;
+	border-radius:3px;
+	background-color:#9fc6ee;
+	padding:0 0 0 10px;
+	font-size:16px;
+	color:#FFF;
+	font-family:微软雅黑;
+	}
+.hrinputB{
+	width:100px;
+	height:39px;
+	line-height:39px;
+	border:1px solid #5497d9;
+	border-radius:3px;
+	background-color:#9fc6ee;
+	padding:0 10px 0 10px;
+	font-size:16px;
+	color:#FFF;
+	font-family:微软雅黑;
+	float:left;
+	}
+.denglu{
+	width:320px;}
+.dengluA{
+	width:100px;
+	float:left;}
+.dengluB{
+	width:100px;
+	}

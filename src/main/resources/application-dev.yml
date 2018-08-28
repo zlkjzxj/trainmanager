@@ -12,7 +12,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
   mvc:
     view:
-      prefix: /WEB-INF/jsp/
+      prefix: /WEB-INF/pages/
       suffix: .jsp
 #mybatis
 #mybatis配置文件根据需要可以添加

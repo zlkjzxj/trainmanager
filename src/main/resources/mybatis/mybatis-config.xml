@@ -38,6 +38,7 @@
 
     <mappers>
         <mapper resource="mapper/Girl.xml"/>
+        <mapper resource="mapper/MenuResource.xml"/>
     </mappers>
 
 </configuration>

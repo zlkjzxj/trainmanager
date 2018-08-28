@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zlkj.trainmanager.dao.MenuResource">
+    <resultMap id="menuresourceList" type="com.zlkj.trainmanager.bean.MenuResourceBean"></resultMap>
+    <!--<select id="getNavMenus" parameterType="java.lang.String" resultMap="menuresourceList">-->
+    <!--select * from PUB_MENU_RESOURCE where menuid in(select resid from PUB_AUTH_SOURCES  where roleid in(select roleid from PUB_AUTH_USERS t where t.yhdh = #{yhdh}))-->
+    <!--</select>-->
+    <select id="getNavMenus" resultMap="menuresourceList">
+        select * from FRM_MENU
+    </select>
+</mapper>
