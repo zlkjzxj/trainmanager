@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zlkj.trainmanager.dao.GirlDao">
+
+    <resultMap type="com.zlkj.trainmanager.bean.Girl" id="GirlResult">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="age" jdbcType="INTEGER" property="age"/>
+    </resultMap>
+
+    <select id="selectGirlById" parameterType="INTEGER" resultType="com.zlkj.trainmanager.bean.Girl">
+        SELECT * FROM girl where id = #{id}
+    </select>
+
+    <select id="getGirlList" resultMap="GirlResult">
+        SELECT * FROM girl
+    </select>
+
+    <!--添加的时候需要主键直接写上这两个参数，然后属性里面不写id主键就行了-->
+    <insert id="insertAGirl" parameterType="com.zlkj.trainmanager.bean.Girl" useGeneratedKeys="true" keyProperty="id">
+        insert into girl(name,age) values(#{name},#{age});
+    </insert>
+
+    <update id="updateAGirl" parameterType="com.zlkj.trainmanager.bean.Girl">
+        update girl
+        <set>
+            -- 不填默认给你写成0了
+            <if test="age !=null and age !=0">
+                age=#{age},
+            </if>
+            <if test="name !=null and  !&quot;&quot;.equals(name.trim())">
+                name = #{name},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+</mapper>

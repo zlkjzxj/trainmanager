@@ -1,0 +1,20 @@
+
+#base
+server:
+  port: 8081
+  servlet:
+    path: /
+#datasource
+spring:
+  datasource:
+    username: root
+    password: 1234!@#$qwerQWER
+    url: jdbc:mysql://119.29.115.175:3306/girl
+    driver-class-name: com.mysql.jdbc.Driver
+#mybatis
+
+#mybatis配置文件根据需要可以添加
+mybatis:
+  config-locations: classpath:mybatis/mybatis-config.xml
+  mapperLocations: classpath:mapper/*.xml
+  typeAliasesPackage: com.walle.sbmybatis.bean

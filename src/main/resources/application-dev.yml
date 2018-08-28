@@ -1,0 +1,22 @@
+
+server:
+  port: 9872
+  servlet:
+    path: /
+#datasource
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://192.168.1.11:3306/trainmanager
+    driver-class-name: com.mysql.jdbc.Driver
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+#mybatis
+#mybatis配置文件根据需要可以添加
+mybatis:
+  config-locations: classpath:mybatis/mybatis-config.xml
+  mapperLocations: classpath:mapper/*.xml
+  typeAliasesPackage: com.walle.sbmybatis.bean
